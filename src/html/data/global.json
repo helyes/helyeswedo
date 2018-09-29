@@ -1,0 +1,16 @@
+{
+  "message": "Any message",
+  "testimonals": [
+    {"cite" :"Matt Bodley",   "testimonal" : "Yuka is very thoughtful and a very good communicator, producing high quality designs efficiently, resulting in satisfied customers for our company. She takes the time to understand the requirements and translates this into a usable interface or design specific and well suited for the purpose."},
+    {"cite" :"Tayte Hampton", "testimonal" : "Yuka is an incredibly talented graphic designer and she was a pleasure to work with. Yuka creates seamless designs and was always willing to go over and above the call of duty in order to meet deadlines. She would be an absolute asset to any design team."},
+    {"cite" :"Rowan Pronk",   "testimonal" : "Yuka possessed a unique combination of great design skills, attention to detail and hard work ethic. I found Yuka to be a very valuable asset on our team at Agentbox. I did not hesitate to recommend Yuka for a new project we were undertaking at BRR Media. I would highly recommend Yuka, be it for a permanent role or as a freelancer."},
+    {"cite" :"Andrew Brown",  "testimonal" : "Yuka is one of the most talented designers I have had the privilege to work with. She is a great asset to any team. She brings many things to the table. Her design skills, communication and openness to solving problems are all valuable traits. I would strongly recommend her as an exceptionally talented designer."}
+  ],
+  "skills": [
+    {"skill": "Photoshop",  "strength" : "90%"},
+    {"skill": "Illustrator","strength" : "90%"},
+    {"skill": "Sketch",     "strength" : "75%"},
+    {"skill": "HTML / CSS", "strength" : "70%"}    
+  ]
+}
+

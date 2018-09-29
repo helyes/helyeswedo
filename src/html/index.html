@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}
+</head>
+<body class="home-page">
+
+	{% include "_partials/menu_mobile.html" %}
+
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+
+			<!-- Content -->
+			<div class="content clearfix">
+
+				<!-- Back Top -->
+				<div class="scroll-to-top">
+					<a href="#" class="icon-angle-up"></a>
+				</div>
+				<!-- Back Top End -->
+
+				<!-- Fullscreen Slider Section -->
+				<section class="section-block featured-media window-height tm-slider-parallax-container">
+					
+					<!-- Scroll Down -->
+					<div class="scroll-down">
+						<a href="#brief" class="scroll-link icon-angle-down"></a>
+					</div>
+					<!-- Scroll Down End -->
+
+					<div class="tm-slider-container full-width-slider" data-parallax data-animation="slide" data-scale-under="960">
+						<ul class="tms-slides">
+							<li class="tms-slide" data-image data-force-fit data-animation="slideTopBottom">
+								<div class="tms-content">
+									<div class="tms-content-inner center">
+										<div class="row">
+											<div class="column width-12">
+												<h1 class="tms-caption title-xlarge color-white lspacing-medium"
+													data-animate-in="preset:scaleOut;duration:1000ms;"
+													data-no-scale>
+													Yuka & Andras
+												</h1>
+												<div class="clear"></div>
+												<h3 class="tms-caption font-alt-1 color-white lspacing-medium"
+													data-animate-in="preset:slideInUpShort;duration:600ms;delay:400ms;"
+													data-no-scale>
+													RSVP
+												</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img data-src="/images/home-fs.jpg" data-retina src="/images/blank.png" srcset="/images/home-fs@2x.jpg 2x" alt=""/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Fullscreen Slider Section End -->
+
+				<!-- Intro Section -->
+				<section id="brief" class="section-block">
+					<div class="row">
+						<div class="column width-8 offset-2 center horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+							<p class="lead weight-light center">Hi there! I'm Yuka, a UI / UX Designer based in Brisbane with over 6 years experience. I have a passion for creating simple, clean and user friendly interfaces and constantly improve the experience and achieve users goals.</p>
+							<span class="icon-quote small"></span>
+							<p class="lead weight-light center no-margin-bottom">Something that looks great but is difficult to use is exemplary of great UI and poor UX. While Something very usable that looks terrible is exemplary of great UX and poor UI.</p>
+							<cite>Helga Moreno</cite>
+						</div>
+					</div>
+				</section>
+				<!-- Intro Section End -->
+
+				<!-- Portfolio Grid Section -->
+				<div id="portfolio" class="section-block grid-filter-menu no-padding-top center">
+					<div class="row no-padding">
+						<div class="column width-12">
+							<h2 class="mb-30">Portfolio</h2>
+							<ul>
+								<li><a class="active" href="#" data-filter="*">All</a></li>
+								<li><a href="#" data-filter=".ui">User Interface</a></li>
+								<li><a href="#" data-filter=".ux">User Experience</a></li>
+								<li><a href="#" data-filter=".visual">Visual Design</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="section-block grid-container fade-in-progressively full-width no-padding-top" data-layout-mode="masonry" data-animate-filter-duration="700" data-set-dimensions data-animate-resize data-animate-resize-duration="0">
+					<div class="row">
+						<div class="column width-12">
+							<div class="row grid content-grid-3">
+								<div class="grid-item ui ux visual">
+									<div class="thumbnail overlay-fade-in" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
+										<a class="overlay-link" href="portfolio/openspace/">
+											<img src="/images/portfolio/openspace/openspace.jpg" alt=""/>
+											<span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title">Open Colleges</span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="grid-item ui visual">
+									<div class="thumbnail overlay-fade-in" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
+										<a class="overlay-link" href="portfolio/realestate/">
+											<img src="/images/portfolio/realestate/begetis.jpg" alt=""/>
+											<span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title">Real Estate Websites</span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="grid-item ui ux">
+									<div class="thumbnail overlay-fade-in" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
+										<a class="overlay-link" href="portfolio/ebgames/">
+											<img src="/images/portfolio/ebgames/ebgames.jpg" alt=""/>
+											<span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title">EB Games</span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="grid-item ui visual">
+									<div class="thumbnail overlay-fade-in" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
+										<a class="overlay-link" href="portfolio/nanairo/">
+											<img src="/images/portfolio/nanairo/nanairo.jpg" alt=""/>
+											<span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title">Nanairo</span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="grid-item ui ux">
+									<div class="thumbnail overlay-fade-in" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
+										<a class="overlay-link" href="portfolio/shiftcare/">
+											<img src="/images/portfolio/shiftcare/shiftcare.jpg" alt=""/>
+											<span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title">ShiftCare</span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="grid-item ui ux mb-40">
+									<div class="thumbnail overlay-fade-in" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
+										<a class="overlay-link" href="portfolio/bsociable/">
+											<img src="/images/portfolio/bsociable/bsociable.jpg" alt=""/>
+											<span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title">Bsociable</span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio Grid Section End -->
+
+			</div>
+			<!-- Content End -->
+			
+			{% include "_partials/footer.html" %}
+
+		</div>
+	</div>
+
+	{% include "_partials/js.html" %}
+	{% include "_partials/ga.html" %}
+</body>
+</html>

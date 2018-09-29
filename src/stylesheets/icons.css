@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* yanai-font */
+@font-face {
+  font-family: "yanai-font";
+  src:url("/fonts/yanai-font.eot");
+  src:url("/fonts/yanai-font.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/yanai-font.woff") format("woff"),
+    url("/fonts/yanai-font.ttf") format("truetype"),
+    url("/fonts/yanai-font.svg#yanai-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[data-icon]:before {
+  font-family: "yanai-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "yanai-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-oc-add-buddy:before {
+  content: "\61";
+}
+.icon-oc-add-doc:before {
+  content: "\62";
+}
+.icon-oc-briefcase:before {
+  content: "\63";
+}
+.icon-oc-buddy:before {
+  content: "\64";
+}
+.icon-oc-calendar:before {
+  content: "\65";
+}
+.icon-oc-check-doc:before {
+  content: "\66";
+}
+.icon-oc-clock:before {
+  content: "\67";
+}
+.icon-oc-close:before {
+  content: "\68";
+}
+.icon-oc-comment:before {
+  content: "\69";
+}
+.icon-oc-course-clone:before {
+  content: "\6a";
+}
+.icon-oc-delete-message:before {
+  content: "\6b";
+}
+.icon-oc-discussion:before {
+  content: "\6c";
+}
+.icon-oc-doc:before {
+  content: "\6d";
+}
+.icon-oc-rocket:before {
+  content: "\6e";
+}
+.icon-oc-notification:before {
+  content: "\6f";
+}
+.icon-oc-reply:before {
+  content: "\70";
+}
+.icon-oc-new-message:before {
+  content: "\71";
+}
+.icon-oc-message-sent:before {
+  content: "\72";
+}
+.icon-oc-message-pending:before {
+  content: "\73";
+}
+.icon-oc-message:before {
+  content: "\74";
+}
+.icon-oc-like:before {
+  content: "\75";
+}
+.icon-oc-iphone:before {
+  content: "\76";
+}
+.icon-oc-home:before {
+  content: "\77";
+}
+.icon-oc-highlight:before {
+  content: "\78";
+}
+.icon-oc-happy:before {
+  content: "\79";
+}
+.icon-oc-download:before {
+  content: "\7a";
+}
+.icon-oc-sad:before {
+  content: "\41";
+}
+.icon-oc-search:before {
+  content: "\42";
+}
+.icon-oc-upload:before {
+  content: "\43";
+}
+.icon-oc-support:before {
+  content: "\44";
+}
+.icon-angle-up:before {
+  content: "\45";
+}
+.icon-twitter:before {
+  content: "\46";
+}
+.icon-linkedin:before {
+  content: "\47";
+}
+.icon-angle-right:before {
+  content: "\48";
+}
+.icon-angle-left:before {
+  content: "\49";
+}
+.icon-angle-down:before {
+  content: "\4a";
+}
+.icon-quote:before {
+  content: "\4b";
+}
+.icon-facebook:before {
+  content: "\4c";
+}
+.icon-instagram:before {
+  content: "\4d";
+}
+.icon-shopping-cart:before {
+  content: "\4e";
+}

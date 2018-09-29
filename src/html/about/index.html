@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}		
+	<link rel="stylesheet" href="/stylesheets/summit.css" />	
+</head>
+
+<body>
+
+	{% include "_partials/menu_mobile.html" %}
+
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+
+			<!-- Content -->
+			<div class="content clearfix">
+
+				<!-- Back Top -->
+				<div class="scroll-to-top">
+					<a href="#" class="icon-angle-up"></a>
+				</div>
+				<!-- Back Top End -->
+
+				<!-- Fullscreen Slider Section -->
+				<section class="section-block featured-media tm-slider-parallax-container">
+
+					<!-- Scroll Down -->
+					<div class="scroll-down">
+						<a href="#brief" class="scroll-link icon-angle-down"></a>
+					</div>
+					<!-- Scroll Down End -->
+
+					<div class="tm-slider-container full-width-slider fixed-height" data-animation="slide" data-scale-under="1140">
+						<ul class="tms-slides">
+							<li class="tms-slide" data-image data-force-fit>
+								<div class="tms-content">
+									<div class="tms-content-inner center">
+										<div class="row">
+											<div class="column width-12">
+											</div>
+										</div>
+									</div>
+								</div>
+								<img data-src="/images/about/feature-fs.jpg" data-retina srcset="/images/about/feature-fs@2x.jpg 2x" src="/images/blank.png" alt=""/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Fullscreen Slider Section End -->
+
+				<!-- Intro Section -->
+				<section id="brief" class="section-block">
+					<div class="column width-12 center">
+						<h1 class="mb-50">About Me</h1>
+					</div>
+					<div class="row flex">
+						<div class="column width-8 offset-2 center">
+							<p class="lead weight-light">I'm Yuka, a UI / UX Designer based in Brisbane. I have been working as a designer in Sydney since 2010 after graduating from University of Technology, Sydney. <br>I have recently moved to Brisbane to enjoy the sunshine!</p>
+						</div>
+						<div class="column width-12 center" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+							<img src="/images/about/aboutme.png" alt="About me" />
+						</div>
+					</div>
+				</section>
+				<!-- Intro Section End -->
+
+				<!-- Skill Section -->
+				<section class="section-block replicable-content bkg-charcoal color-white">
+						<div class="row flex horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="1">
+							<div class="column width-4">
+								<h2 class="mb-30">Skills</h2>
+							</div>
+							<div class="column width-8">
+								{% for skillItem in skills %}
+									<p>{{skillItem.skill}}</p>
+									<div class="progress-bar small pill">
+										<div class="bar bkg-red-light color-white horizon" style="width:{{skillItem.strength}};" data-animate-in="transX:-300;duration:1000ms;easing:swing;">
+											{{skillItem.strength}}
+										</div>
+									</div>
+								{% else %}
+								<!-- This would display if the collection were empty -->
+								<li></li>
+								{% endfor %}
+							</div>
+						</div>
+					</section>
+				<!-- Skill Section End -->
+
+				<!-- Testimonial Section -->
+				<div class="section-block testimonial-5 testimonials-5-about-1">
+					<div id="testimonial-slider-1" class="testimonial-slider tm-slider-container">
+						<ul class="tms-slides">
+							<!-- See testimonals in html/data/global.json -->
+							{% for testimonalItem in testimonals %}
+								<li class="tms-slide" data-image>
+										<div class="tms-content-scalable">
+											<div class="row">
+												<div class="column width-12">
+													<blockquote class="center large">
+														<p>{{testimonalItem.testimonal}}
+															<cite>{{testimonalItem.cite}}</cite>
+														</p>
+													</blockquote>
+												</div>
+											</div>
+										</div>
+									</li>
+							{% else %}
+							<!-- This would display if the 'item' collection were empty -->
+								<li>Ops.</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<!-- Testimonial Section End -->
+
+			</div>
+			<!-- Content End -->
+
+			{% include "_partials/footer.html" %}
+
+		</div>
+	</div>
+
+	{% include "_partials/js.html" %}
+
+	<script src="/javascripts/lib//template-functions.js"></script>
+	<script src="/javascripts/lib//jquery.tm.summit.min.js"></script>
+
+	{% include "_partials/ga.html" %}
+</body>
+</html>

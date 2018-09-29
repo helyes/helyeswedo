@@ -1,0 +1,92 @@
+{% from 'macros/portfolio.html' import slider, pagination %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}	
+</head>
+
+<body class="nanairo">
+
+	{% include "_partials/menu_mobile.html" %}
+
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+			
+			<!-- Content -->
+			<div class="content clearfix">
+
+				{{ slider("nanairo") }}
+
+				<!-- Intro Section -->
+				<section id="brief" class="section-block">
+					<div class="row no-margin-bottom">
+						<div class="column width-10 offset-1 center horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+							<h1 data-animate-in="preset:scaleOut;duration:1000ms;" class="tm-caption mb-30">Nanairo</h1>
+							<p class="lead weight-light">While living away from home since 18, I constantly miss my pup, Nana. I've always wanted to create a brand as a bit of homage to her, and so I named my brand, 'Nanairo'. In Japanese, it also means 'seven colours of the rainbow'.</p>
+							<p class="lead weight-light">My obsession with dogs, plants and a love of design, I was inspired to creating miniature pieces of everything I love, because we all love miniature stuff don’t we? I loved sharing this with family and friends, and their love to their pets. With encouragements from them, I decided that I want to share this with on etsy.</p>
+						</div>
+					</div>
+				</section>
+				<!-- Intro Section End -->
+
+				<!-- Branding -->
+				<div class="section-block bkg-light">
+					<div class="row center">
+						<div class="column width-8 offset-2 center mb-10">
+							<h2>Branding</h2>
+						</div>
+						<img class="mb-20" src="/images/portfolio/nanairo/logo.png" alt=""/>
+						<img src="/images/portfolio/nanairo/colour-pallete.png" alt=""/>
+					</div>
+				</div>
+				<!-- Branding End -->
+
+				<!-- Website & Photography -->
+				<div class="section-block bkg-grey-ultralight">
+					<div class="row">
+						<div class="column width-8 offset-2 center mb-20">
+							<h2>Website</h2>
+						</div>
+						<img class="mb-60" src="/images/portfolio/nanairo/nanairowebsite.png" alt=""/>
+						<div class="column width-8 offset-2 center mb-20">
+							<h2 class="mb-60">Photography</h2>
+						</div>
+						<div class="column width-4">
+							<img src="http://www.nanairodesigns.com/images/listings/nanadish.jpg" alt=""/>
+						</div>
+						<div class="column width-4">
+							<img src="http://www.nanairodesigns.com/images/listings/initialsdish.jpg" alt=""/>
+						</div>
+						<div class="column width-4 mb-20">
+							<img src="http://www.nanairodesigns.com/images/listings/pugearrings.jpg" alt=""/>
+						</div>
+						<div class="column width-4">
+							<img src="http://www.nanairodesigns.com/images/listings/dogportrait.jpg" alt=""/>
+						</div>
+						<div class="column width-4">
+							<img src="http://www.nanairodesigns.com/images/listings/catportrait.jpg" alt=""/>
+						</div>
+						<div class="column width-4">
+							<img src="http://www.nanairodesigns.com/images/listings/airplants.jpg" alt=""/>
+						</div>
+					</div>
+				</div>
+				<!-- Website & Photography End -->
+
+				{{ pagination("ebgames", "shiftcare") }}
+
+			</div>
+			<!-- Content End -->
+
+			{% include "_partials/footer.html" %}
+
+		</div>
+	</div>
+	
+	{% include "_partials/js.html" %}
+	{% include "_partials/ga.html" %}
+
+</body>
+</html>

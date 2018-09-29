@@ -1,3 +1,15 @@
+.DS_Store
+
+### Build folder ###
+/public
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+tsconfig.json
+jsconfig.json
+
 # Logs
 logs
 *.log

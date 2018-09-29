@@ -1,0 +1,100 @@
+{% from 'macros/portfolio.html' import slider, pagination %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}	
+</head>
+
+<body class="ebgames">
+
+	{% include "_partials/menu_mobile.html" %}
+
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+			
+			<!-- Content -->
+			<div class="content clearfix">
+
+				{{ slider("ebgames") }}
+
+				<!-- Intro Section -->
+				<section id="brief" class="section-block">
+					<div class="row no-margin-bottom">
+						<div class="column width-10 offset-1 center horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+							<h1 data-animate-in="preset:scaleOut;duration:1000ms;" class="tm-caption mb-30">EB Games</h1>
+							<p class="lead weight-light">As a designer in EB Games, I was responsible for implementing interface and visual design for the internal platforms to create a user friendly and efficient process for merchandisers and researching and creating a better user experience for customers to find and purchase products on the website.</p>
+						</div>
+					</div>
+				</section>
+				<!-- Intro Section End -->
+
+				<!-- MPC -->
+				<div class="section-block bkg-charcoal">
+					<div class="row">
+						<div class="column width-8 offset-2 center mb-40 color-white">
+							<h2>Internal Application</h2>
+							<p>This was my first project at EB Games. The goal was to redesign and restructure the merchandiser's application, while maintaining its value.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column width-4 color-white left">
+							<h4>The Problem</h4>
+							<p>In 7 years of selling and merchandising products online, the business has evolved and grown to the extent of merchandising the same products three times, and triplicating the effort for development and business to build and maintain three applications.</p>
+							<h4>Objectives</h4>
+							<p>&#8729; &nbsp;&nbsp;One Interface<br />
+							&#8729; &nbsp;&nbsp;Product Taxonomy Structure<br />
+							&#8729; &nbsp;&nbsp;Create consistent product data<br />
+							&#8729; &nbsp;&nbsp;Group Logically<br />
+							&#8729; &nbsp;&nbsp;Bulk Editing<br />
+							&#8729; &nbsp;&nbsp;Remove redundant data/attributes<br />
+							&#8729; &nbsp;&nbsp;Reduce Dev Support</p>
+						</div>
+						<div class="column width-8">
+							<img src="/images/portfolio/ebgames/ebgamesmpcui.png" alt=""/>
+						</div>
+					</div>
+					
+				</div>
+				<!-- MPC End -->
+
+				<!-- Responsive Website -->
+
+				<div class="section-block bkg-blue">
+					<div class="row">
+						<div class="column width-8 offset-2 center color-white mb-40">
+							<h2>Responsive UI Design</h2>
+							<p>The primary goal for this project was to create a responsive website that can be consumed by any devices and to create a unique discovery journey to customers.</p>
+						</div>
+					</div>
+
+					<div class="row mb-40">
+						<div class="column width-12 center color-white mb-40">
+							<h4 class="mb-60">UX Research - Customer journey mapping and identify problems with the current EB Games and Zing websites</h4>
+							<img src="/images/portfolio/ebgames/customerjourney.png" alt=""/>
+						</div>
+					</div>
+
+					<div class="row mb-40">
+						<h4 class="color-white center mb-60">Design vision - what could the solution be?</h4>
+						<img src="/images/portfolio/ebgames/ebgamesui.png" alt=""/>
+					</div>
+				</div>
+				
+				<!-- Responsive Website End -->
+				
+				{{ pagination("realestate", "nanairo") }}
+			
+			</div>
+			<!-- Content End -->
+
+			{% include "_partials/footer.html" %}
+
+		</div>
+	</div>
+	
+	{% include "_partials/js.html" %}
+	{% include "_partials/ga.html" %}
+</body>
+</html>
