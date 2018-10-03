@@ -13,6 +13,27 @@
 }
 
 
+@font-face {
+  font-family: 'Noe Display Regular';
+  src: url("/fonts/noe-display-regular.ttf");
+  font-style: normal;
+  font-weight: 400
+}
+
+@font-face {
+  font-family: 'Noe Display Bold';
+  src: url("/fonts/noe-display-bold.ttf");
+  font-style: bold;
+  font-weight: 400
+}
+
+@font-face {
+  font-family: 'Noe Display Italic';
+  src: url("/fonts/noe-display-regular-italic.ttf");
+  font-style: italic;
+  font-weight: 400
+}
+
 [data-icon]:before {
   font-family: "yanai-font" !important;
   content: attr(data-icon);
@@ -38,6 +59,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 .icon-oc-add-buddy:before {
   content: "\61";
@@ -129,33 +151,33 @@
 .icon-oc-support:before {
   content: "\44";
 }
-.icon-angle-up:before {
+.icon-oc-angle-up:before {
   content: "\45";
 }
-.icon-twitter:before {
+.icon-oc-twitter:before {
   content: "\46";
 }
-.icon-linkedin:before {
+.icon-oc-linkedin:before {
   content: "\47";
 }
-.icon-angle-right:before {
+.icon-oc-angle-right:before {
   content: "\48";
 }
-.icon-angle-left:before {
+.icon-oc-angle-left:before {
   content: "\49";
 }
-.icon-angle-down:before {
+.icon-oc-angle-down:before {
   content: "\4a";
 }
-.icon-quote:before {
+.icon-oc-quote:before {
   content: "\4b";
 }
-.icon-facebook:before {
+.icon-oc-facebook:before {
   content: "\4c";
 }
-.icon-instagram:before {
+.icon-oc-instagram:before {
   content: "\4d";
 }
-.icon-shopping-cart:before {
+.icon-oc-shopping-cart:before {
   content: "\4e";
 }
