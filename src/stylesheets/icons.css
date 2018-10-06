@@ -176,8 +176,11 @@
   content: "\4c";
 }
 .icon-oc-instagram:before {
-  content: "\4d";
-}
+  content: "\4d"; }
+  
 .icon-oc-shopping-cart:before {
   content: "\4e";
+}
+.icon-oc-bars:before {
+  content: "\4f";
 }

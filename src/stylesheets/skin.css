@@ -307,6 +307,7 @@ h4.project-title{
 .footer p{
 	font-size: 1.4rem;
 	color: #888;
+	margin-bottom: 1rem;
 }
 .footer .widget img {
 	width: 65px;
@@ -389,16 +390,16 @@ h4.project-title{
 @media only screen and (max-width: 768px){
 	h2,
 	.title-large{
-		font-size: 2.8rem;
+		font-size: 3rem;
 	}
 	h3 {
 		font-size: 1.4rem;
 	}
 	h4 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	h5{
-		font-size: 1.3rem;
+		font-size: 1.7rem;
 	}
 	h6{
 		font-size: 1.1rem;
@@ -895,7 +896,7 @@ body,
 	.header .header,
 	.header .header-inner,
 	.header.header-transparent .header-inner{
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.8);
 	}
 	.header .header-inner{
 		border-bottom: 1px solid #eee;
@@ -912,6 +913,24 @@ body,
 /* Initial Logo Width */
 .header .logo{
 	width: 17rem;
+}
+
+@media only screen and (max-width: 960px){
+	.header .logo{
+		width: 15rem !important;
+	}
+
+	.header .logo a {
+		top: -2px !important;
+	}
+
+	.logo-inner .white {
+		display: none;
+	}
+	.header .logo, .header .header-inner .navigation > ul > li, .header .header-inner .navigation > ul > li > a:not(.button), .header .header-inner .dropdown > .nav-icon {
+		height: 5rem !important;
+		line-height: 5rem !important;
+	}
 }
 
 /* Compacted Header Logo Width */
@@ -1351,11 +1370,14 @@ body,
 		color: #fff;
 	}
 	.header .navigation .nav-icon{
-		color: #666;
+		color: #999;
 	}
 	.header .navigation .nav-icon:hover,
 	.header .dropdown .nav-icon.active{
 		color: #000;
+	}
+	.featured-media {
+		margin-top: -5rem !important;
 	}
 }
 
@@ -1578,7 +1600,7 @@ body.openspace p.os-icons {
 
 /* Overlay Navigation Colors & Sizes */
 .overlay-navigation-wrapper{
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0.95);
 }
 .overlay-navigation-inner{
 	text-align: left;
@@ -1605,15 +1627,17 @@ body.openspace p.os-icons {
 
 /* Overlay Main Nav */
 .overlay-navigation > ul > li > a{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	color: #999;
+	font-family: 'Noe Display Regular', sans-serif;
+	letter-spacing: 0.05rem;
 }
 .overlay-navigation ul li.current > a{
 	font-weight: normal;
 }
 .overlay-navigation-wrapper .navigation-hide{
 	top: 0;
-	right: 3rem;
+	right: 2rem;
 }
 .overlay-navigation-wrapper .navigation-hide a{
 	color: #999;
@@ -2833,6 +2857,9 @@ textarea.required-field{
 	font-size: 1.3rem;
 	color: #888;
 	font-weight: 700;
+}
+.footer .footer-top a span {
+	font-size: 2.4rem;
 }
 .footer-top .footer-logo{
 	width: 9rem;
