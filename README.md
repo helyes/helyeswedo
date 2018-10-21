@@ -65,6 +65,23 @@ yarn run blendid -- gh-pages
 Check below if commiter = null issues arise when running gh-pages task:
 
 ```
+/node_modules/gift/lib/commit.js:145
+      ref1 = /^.+? (.*) (\d+) .*$/.exec(line), m = ref1[0], actor = ref1[1], epoch = ref1[2];
+                                                       ^
+
+TypeError: Cannot read property '0' of null
+    at Function.module.exports.Commit.actor (/helyeswedo/node_modules/gift/lib/commit.js:145:56)
+    at Function.module.exports.Commit.parse_commits (/helyeswedo/node_modules/gift/lib/commit.js:111:21)
+    at /helyeswedo/node_modules/gift/lib/commit.js:55:39
+    at ChildProcess.exithandler (child_process.js:267:7)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+✨  Done in 39.85s.
+```
+
+```
 https://github.com/shinnn/gulp-gh-pages/issues/116#issuecomment-342982109
 
 cd node_modules/gulp-gh-pages/
