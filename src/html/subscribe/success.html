@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}
+</head>
+<body class="home-page">
+
+	{% include "_partials/menu_mobile.html" %}
+
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+
+			<!-- Content -->
+			<div class="content clearfix">
+
+				<!-- Back Top -->
+				<div class="scroll-to-top">
+					<a href="#" class="icon-angle-up"></a>
+				</div>
+				<!-- Back Top End -->
+
+				<!-- Fullscreen Slider Section -->
+				<section class="section-block featured-media window-height tm-slider-parallax-container">
+					
+					<!-- Scroll Down -->
+					<div class="scroll-down">
+						<a href="#brief" class="scroll-link icon-angle-down"></a>
+					</div>
+					<!-- Scroll Down End -->
+
+					<div class="tm-slider-container full-width-slider" data-parallax data-animation="slide" data-scale-under="960">
+						<ul class="tms-slides">
+							<li class="tms-slide" data-image data-force-fit data-animation="slideTopBottom">
+								<div class="tms-content">
+									<div class="tms-content-inner center">
+										<div class="row">
+											<div class="column width-12">
+												<div class="clear"></div>
+												<h1 class="tms-caption title-xlarge color-white mt-20"
+													data-animate-in="preset:scaleOut;duration:1000ms;delay:100ms;"
+													data-no-scale>
+													Thank you
+												</h1>
+												<div class="clear"></div>
+												<h2 class="tms-caption font-alt-1 color-white lspacing-small"
+													data-animate-in="preset:slideInUpShort;duration:600ms;delay:400ms;"
+													data-no-scale>
+													<span style="text-transform: none; font-size:76%">We look forward to celebrating with you!</span>
+												</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img data-src="/images/home-fs.jpg" data-retina src="/images/blank.png" srcset="/images/home-fs@2x.jpg 2x" alt=""/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Fullscreen Slider Section End -->
+				
+			</div>
+			<!-- Content End -->
+
+		</div>
+	</div>
+
+	{% include "_partials/js.html" %}
+	{% include "_partials/ga.html" %}
+</body>
+</html>
