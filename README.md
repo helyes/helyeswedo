@@ -62,6 +62,8 @@ The below will run production build then pushes /public folder content to the re
 yarn run blendid -- gh-pages
 ```
 
+### The weirdness
+
 Check below if commiter = null issues arise when running gh-pages task:
 
 ```
@@ -89,3 +91,40 @@ npm install --save gift@0.10.2
 cd ../../
 gulp deploy
 ``` 
+
+If you receive any weird github issues whilst pushing to gh-pages branch, most likely `ghpages` temp folder is corrupted. It must be deleted.
+
+**Error**
+```
+[14:34:40] [gh-pages] Updating repository
+[14:34:41] 'gh-pages' errored after 1.76 s
+[14:34:41] Error in plugin 'gulp-gh-pages'
+Message:
+    Command failed: git pull  
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> gh-pages
+
+
+Details:
+    killed: false
+    code: 1
+    signal: null
+    cmd: git pull  
+✨  Done in 7.31s.
+```
+
+**Fix:**
+
+On mac, find node_modules/gulp-gh-pages/lib/git.js and log it at the below location
+```
+function prepareRepo(remoteUrl, origin, dir) {
+  var promise;
+  console.log("Preparing repo... Pubish dir:", dir, ", remote url:", remoteUrl, ", origin:", origin )
+```
