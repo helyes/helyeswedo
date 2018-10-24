@@ -42,6 +42,27 @@ Copyright: ThemeMountain
 [1. Typography]
 */
 
+@font-face {
+	font-family: 'Noe Display Regular';
+	src: url("/fonts/noe-display-regular.ttf");
+	font-style: normal;
+	font-weight: 400
+  }
+  
+  @font-face {
+	font-family: 'Noe Display Bold';
+	src: url("/fonts/noe-display-bold.ttf");
+	font-style: bold;
+	font-weight: 400
+  }
+  
+  @font-face {
+	font-family: 'Noe Display Italic';
+	src: url("/fonts/noe-display-regular-italic.ttf");
+	font-style: italic;
+	font-weight: 400
+  }
+
 body{
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	letter-spacing: 0;
