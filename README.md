@@ -32,7 +32,7 @@ The below command will open the site on a new window and update it whenever a fi
 ```
 yarn run blendid
 ```
-Servers unmodified -no compression, versioning etc - files from /public folder.
+Serves unmodified -no compression, versioning etc - files from /public folder.
 
 **Production build**
 
