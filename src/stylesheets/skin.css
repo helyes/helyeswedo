@@ -3327,6 +3327,17 @@ blockquote.border{
 	border: 1px solid #eee;
 	background-color: rgba(255, 255, 255, 0.9);
 }
+.accordion li.active a.links {
+	border: none;
+	background-color: #F4F4F4;
+	text-decoration: underline;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #666;
+}
 .accordion li.active + li:not(.active) a{
 	border-top: 1px solid transparent;
 }
