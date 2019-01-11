@@ -17,7 +17,8 @@ yarn install
 **Go to project folder then checkout new branch**
 ```
 cd helyeswedo
-git checkout -b my-new-update
+git checkout master
+git pull
 ```
 Update files
 ```
