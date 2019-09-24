@@ -756,6 +756,14 @@ body,
 	border: 1px solid #888;
     padding: 8px 15px;
 }
+
+#gift-registry .gift-registry-btn {
+	border: 1px solid #666;
+  padding: 8px 15px;
+  font-size: 1.3rem;
+  color: #888;
+  font-weight: 700;
+}
 .footer .contact-me:hover {
 	border: 1px solid #EF5350;
 }
